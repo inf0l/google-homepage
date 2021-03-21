@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<!-- 
+    Create a copy of google.com including logo and search bar.
+
+-->
+<style>
+* {
+    font-family: arial, sans-serif;
+    font-size: 16px;
+}
+header {
+    display: flex;
+    flex-direction: row-reverse;
+}
+body {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+#img-div {
+    position: relative;
+    margin: auto;
+}
+#logo {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+button {
+    background: #fafafa;
+    border: 2px solid #fafafa;
+    padding: 9px 20px;
+    border-width: 40px;
+    margin-top: 10px;
+    border: 0px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+#login {
+    background: #265cf0;
+    color: white;
+    margin-right: 20px;
+}
+
+button:hover {
+    border: 1px solid #999999;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.04), 0 2px 2px 0 rgba(0,0,0,0.09);
+}
+
+footer {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    background: #f2f2f2;
+}
+
+.fbutton {
+    background: #f2f2f2;
+    color: rgba(0,0,0,0.54);
+    margin: auto;
+}
+</style>
+
+<html>
+    <header>
+	<button id="login" style>Sign in</button>
+	<button name="pics">Images</button>
+	<button name="mail">Gmail</button>
+    </header>
+    <body>
+	<div id="img-div">
+	    <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+	</div>
+	<div id="search-div">
+	    <form action="#">
+		<input type="text" id="seachbar" size="60" placeholder="">
+	    </form>
+	    <div id="buttons">
+		<button type="submit" name="search">Search Google</button>
+		<button type="button" name="lucky">I'm feeling lucky!</button>
+	    </div>
+	</div>
+    </body>
+    <footer>
+	<div id="left-footer">
+	    <button class="fbutton" id="about">About</button>
+	    <button class="fbutton" id="ads">Advertising</button>
+	    <button class="fbutton" id="b2b">Business</button>
+	    <button class="fbutton" id="how" style="margin-right: 30px;">How Search works</button>
+	    <button class="fbutton" id="privacy" style="margin-left: 30px;">Privacy</button>
+	    <button class="fbutton" id="terms">Terms</button>
+	    <button class="fbutton" id="settings">Settings</button>
+	</div>
+	<div id="right-footer">
+	</div>
+
+    </footer>
+</html>
